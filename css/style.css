@@ -1,0 +1,363 @@
+
+/* Общие стили для сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    color: #fff;
+    background-color: #191E23;
+    font-family: 'JetBrains Mono', monospace;
+    position: relative;
+}
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+    padding: 0;
+    margin: 0;
+}
+.hamburger {
+    display: none;
+}
+.container {
+    max-width: 1480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* menu */
+.menu {
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    width: 100%;
+    padding: 10px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+.menu-wrapper {
+    width: 1480px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-link {
+    font-weight: 300;
+    position: relative;
+    margin-right: 50px;
+    text-transform: uppercase;
+    color: #828A95;
+
+    transition: .3s all;
+}
+.menu-link::after {
+    content: " ";
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0px;
+    bottom: -4px;
+    background: #fff;
+    transition: all 200ms ease;
+}
+.menu-link__4 {
+    margin-right: 0;
+}
+.menu-link:hover {
+    color: #fff;
+}
+.menu-link:hover::after{
+    color: #fff;
+    height: 4px;
+}
+
+
+
+/* header */
+.header {
+    padding: 200px 0 50px 0;
+    height: 100vh;
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-wrapper img {
+    height: 500px;
+}
+.header-wrapper__info {
+    line-height: 80px;
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+}
+.header-wrapper__info h1 {
+    line-height: 80px;
+    font-size: 74px;
+    margin-left: 50px;
+}
+.header-wrapper__info h2 {
+    display: flex;
+    line-height: 80px;
+    font-size: 74px;
+}
+.header-wrapper__line {
+    margin-left: 50px;
+}
+.header-wrapper__info span {
+    display: block;
+    margin-top: 40px;
+    margin-right: 20px;
+    width: 200px;
+    height: 8px;
+    background: #fff;
+}
+.header-wrapper__info p {
+    font-weight: 300;
+    position: relative;
+    margin-left: 50px;
+    text-transform: uppercase;
+    color: #828A95;
+    font-family: 'JetBrains Mono', monospace;
+}
+.header-wrapper__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid #828A95;
+    border-radius: 8px;
+    margin-left: 50px;
+    margin-top: 100px;
+    width: 200px;
+    height: 50px;
+    transition: .5s all;
+}
+.header-wrapper__btn::after {
+    border: none;
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    transition: .5s all;
+}
+.header-wrapper__btn::before {
+    border: none;
+    content: " ";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: #fff;
+    z-index: -1;
+    width: 0%;
+    transition: all 400ms ease;
+    border-radius: 8px;
+}
+.header-wrapper__btn:hover {
+    border-color: #fff;
+    color: #191E23;
+}
+.header-wrapper__btn:hover::after {
+    background-color: #191E23;
+}
+.header-wrapper__btn:hover::before {
+    width: 100%;
+}
+
+
+
+/* hobby */
+.hobby {
+    padding: 100px 0;
+    height: 100vh;
+
+    overflow: hidden;
+    position: relative;
+}
+.hobby h2 {
+    font-size: 54px;
+}
+.hobby-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.hobby-wrapper h2{
+    display: block;
+    width: 20%;
+}
+.hobby-inner {
+    display: flex;
+    width: 60%
+}
+.hobby-wrapper__inner {
+    margin-left: 20px;
+
+    max-width: 230px;
+    width: 100%;
+    padding: 24px;
+    border: 1px solid rgba(154, 82, 97, 0.3); 
+    border-radius: 10px;
+    transition: .2s all ease;
+    min-height: 360px;
+    background-image: radial-gradient(circle at 90% -60%, rgba(193, 24, 34, 0.6), rgba(193, 24, 34, 0) 68%);
+    text-align: center;
+    cursor: pointer;
+}
+.hobby-wrapper__inner:hover {
+    border-color: rgba(154, 82, 97, 0.7);
+}
+.hobby-wrapper__inner h3 {
+    font-weight: 300;
+    display: inline-block;
+    padding: 5px 12px 4px;
+    border-radius: 20px;
+    background-color: rgb(231, 146, 72);
+    color: rgb(255, 239, 153);
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.hobby-background {
+    position: absolute;
+    top: 100px;
+    right: -500px;
+    z-index: -1;
+
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    background: rgba(193, 24, 34, 0.6);
+    filter: blur(100px);
+}
+
+
+
+
+/* адаптация */
+
+@media all and (max-width: 1500px) {
+    .container {
+        max-width: 1350px;
+    }
+    .menu-wrapper {
+        max-width: 1360px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+    .menu-wrapper {
+        max-width: 1140px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+    .menu-wrapper {
+        max-width: 960px;
+    }
+    .header-wrapper img {
+        display: none;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+    .menu-wrapper {
+        max-width: 720px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+    .menu-wrapper {
+        max-width: 540px;
+    }
+
+    .header-wrapper__info h1 {
+        margin-left: 0;
+    }
+    .header-wrapper__info h2 {
+        margin-left: 0;
+    }
+    .header-wrapper__info span {
+        width: 100px;
+    }
+    .header-wrapper__info p {
+        margin-left: 0;
+    }
+    .header-wrapper__btn {
+        margin-left: 0;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+    .menu-wrapper {
+        max-width: 320px;
+        display: none;
+    }
+    .hamburger {
+        position: fixed;
+        top: 15px;
+        left: 15px;
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+    .hamburger span {
+        display: block;
+        margin-top: 7px;
+        width: 40px;
+        height: 4px;
+        background-color: #fff;
+    }
+
+    .header {
+        padding-top: 150px
+    }
+    .header-wrapper__info h1 {
+        font-size: 42px;
+        line-height: normal;
+    }
+    .header-wrapper__info h2{
+        font-size: 42px;
+        line-height: normal;
+    }
+    .header-wrapper__info span {
+        width: 50px;
+        margin-top: 23px;
+    }
+}
