@@ -1,0 +1,131 @@
+/* Основные стили для сайта */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, li {
+    list-style-type: none;
+}
+body {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 18px;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 50px 0;
+    height: 100vh;
+    background-color: #050505;
+    color: #fff;
+}
+
+
+
+/* Стили для кнопки "return" */
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    background: none;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s all;
+}
+a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* Стили для input */
+.header__wrapper {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+label {
+    display: block;
+}
+input {
+    width: 300px;
+    height: 40px;
+    outline: none;
+}
+.form__wrapper {
+    margin-top: 20px;
+}
+.form__wrapper:nth-child(4) {
+    margin-bottom: 20px;
+}
+
+
+
+/* Стили для кнопки "send" */
+#button {
+    margin-top: 10px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: .5s all;
+}
+#button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+/* адаптация */
+
+@media all and (max-width: 1500px) {
+    .container {
+        max-width: 1350px;
+    }
+    .menu-wrapper {
+        max-width: 1360px;
+    }
+}
+
+@media all and (max-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media all and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media all and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media all and (max-width: 576px) {
+    .container {
+        padding: 0 10px;
+    }
+}
