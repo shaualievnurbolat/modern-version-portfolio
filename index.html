@@ -12,21 +12,36 @@
 </head>
 <body>
 
+    <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="overlay">
+    
+    </div>
+
+    <div class="menu-sidebar">
+        <div class="menu-sidebar__close">&#10060;</div>
+        <ul class="sidebar-link">
+            <li><a href="#aboutme" class="sidebar-links">about me</a></li>
+            <li><a href="#hobby" class="sidebar-links">hobby</a></li>
+            <li><a href="#contacts" class="sidebar-links">contacts</a></li>
+            <li><a href="#skills" class="sidebar-links">skills</a></li>
+        </ul>
+    </div>
+
     <nav class="menu">
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
         <ul class="menu-wrapper">
-            <li><a href="#" class="menu-link">about me</a></li>
-            <li><a href="#" class="menu-link">hobby</a></li>
-            <li><a href="#" class="menu-link">contacts</a></li>
-            <li><a href="#" class="menu-link menu-link__4">skills</a></li>
+            <li><a href="#aboutme" class="menu-link">about me</a></li>
+            <li><a href="#hobby" class="menu-link">hobby</a></li>
+            <li><a href="#contacts" class="menu-link">contacts</a></li>
+            <li><a href="#skills" class="menu-link menu-link__4">skills</a></li>
         </ul>
     </nav>
     
-    <header class="header">
+    <header id="aboutme" class="header">
         <div class="container">
             <div class="header-wrapper">
                 <div class="header-wrapper__info">
@@ -41,7 +56,7 @@
         </div>
     </header>
 
-    <section class="hobby">
+    <section id="hobby" class="hobby">
         <div class="hobby-background">
 
         </div>
@@ -72,7 +87,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="container">
             <h2>skills</h2>
             <div class="skills-wrapper">
@@ -98,7 +113,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer id="contacts" class="footer">
         <div class="container">
             <div class="footer-wrapper">
                 <a class="footer-link" href="#">DISCORD</a>
@@ -108,5 +123,6 @@
         </div>
     </footer>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
